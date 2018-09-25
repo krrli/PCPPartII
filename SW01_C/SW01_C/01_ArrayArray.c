@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 
-// typischer imperativen C-Code mit einer goto - Anweisung
-// 0 1 2 3 4 5 6 7 = printNumbersGoto(7)
+/*
+	typischer imperativen C-Code mit einer goto - Anweisung
+	0 1 2 3 4 5 6 7 = printNumbersGoto(7)
+*/
 void printNumbersGoto(int untilNumberX) {		
 
 	if (untilNumberX < 0) return;	
@@ -17,12 +19,16 @@ void printNumbersGoto(int untilNumberX) {
 
 }
 
-// typischer strukturierten C-Code mit einer for-Anweisung
+/*
+	typischer strukturierten C-Code mit einer for-Anweisung
+*/
 void printNumbersFor(int untilNumberX) {
 
 }
 
-// typischer prozeduraler Code mit einer rekursiven Funktion
+/*
+	typischer prozeduraler Code mit einer rekursiven Funktion
+*/
 void printNumbersRecursiveFunction() {
 
 }
