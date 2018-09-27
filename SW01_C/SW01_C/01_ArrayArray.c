@@ -11,11 +11,9 @@ void printNumbersGoto(int untilNumberX) {
 
 	int i = 0;
 	iPlusPlusAndContinue:
-	printf("%i ", i);
+	printf(" %i ", i);
 	i++;
-	if (i <= untilNumberX) goto iPlusPlusAndContinue;
-
-	printf("= printNumbersGoto(%i)\n", untilNumberX);
+	if (i <= untilNumberX) goto iPlusPlusAndContinue;	
 
 }
 
@@ -24,25 +22,33 @@ void printNumbersGoto(int untilNumberX) {
 */
 void printNumbersFor(int untilNumberX) {
 	for (int i = 0; i <= untilNumberX; i++) {
-		printf("%i ", i);
-	}
-	printf("= printNumbersFor(%i)\n ", untilNumberX);
+		printf(" %i ", i);
+	}	
 }
 
 /*
 	typischer prozeduraler Code mit einer rekursiven Funktion
 */
-void printNumbersRecursiveFunction(int untilNumberX, int actualNumber) {
-	printf("%i ", actualNumber);
-	if (actualNumber <= untilNumberX) printNumbersRecursiveFunction(untilNumberX, (actualNumber+1));
-	else printf("= printNumbersRecursiveFunction(%i)\n ", untilNumberX);
+void printNumbersRecursiveFunction(int untilNumberX) {
+	if (untilNumberX >= 0) {
+		printNumbersRecursiveFunction(untilNumberX - 1);
+		printf(" %i ", untilNumberX);
+	}
+	
 }
 
 
+
 int main() {
-	//printNumbersGoto(7);
-	//printNumbersFor(7);
-	printNumbersRecursiveFunction(7, 0);
+	int countTo = 7;
+	printNumbersGoto(countTo);
+	printf("= printNumbersGoto(%i)\n", countTo);
+
+	printNumbersFor(countTo);
+	printf("= printNumbersFor(%i)\n", countTo);
+
+	printNumbersRecursiveFunction(countTo);
+	printf("= printNumbersRecursiveFunction(%i)\n", countTo);
 	return 0;
 }
 
