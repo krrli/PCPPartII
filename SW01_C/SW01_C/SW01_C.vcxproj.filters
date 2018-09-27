@@ -13,18 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Aufgabe01">
+    <Filter Include="Source Files\Aufgabe01_Loops">
       <UniqueIdentifier>{1dabe074-8236-4d9a-a198-f912ea739af0}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="01_ArrayArray.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <Filter Include="Source Files\Aufgabe02_ADTStack">
+      <UniqueIdentifier>{b4a8f1b1-7a79-49fe-a297-32b79a50eb6d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="01_ArrayArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>Source Files\Aufgabe02_ADTStack</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="01_ArrayArray.c">
+      <Filter>Source Files\Aufgabe01_Loops</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files\Aufgabe02_ADTStack</Filter>
+    </ClCompile>
+    <ClCompile Include="stack.c">
+      <Filter>Source Files\Aufgabe02_ADTStack</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

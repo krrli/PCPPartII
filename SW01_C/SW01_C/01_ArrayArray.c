@@ -38,7 +38,7 @@ void printNumbersRecursiveFunction(int untilNumberX) {
 }
 
 
-
+/*
 int main() {
 	int countTo = 7;
 	printNumbersGoto(countTo);
@@ -51,4 +51,4 @@ int main() {
 	printf("= printNumbersRecursiveFunction(%i)\n", countTo);
 	return 0;
 }
-
+*/
