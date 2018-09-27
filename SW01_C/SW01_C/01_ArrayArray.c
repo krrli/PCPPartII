@@ -15,7 +15,7 @@ void printNumbersGoto(int untilNumberX) {
 	i++;
 	if (i <= untilNumberX) goto iPlusPlusAndContinue;
 
-	printf("= printNumbersGoto(%i)\n ", untilNumberX);
+	printf("= printNumbersGoto(%i)\n", untilNumberX);
 
 }
 
@@ -23,19 +23,26 @@ void printNumbersGoto(int untilNumberX) {
 	typischer strukturierten C-Code mit einer for-Anweisung
 */
 void printNumbersFor(int untilNumberX) {
-
+	for (int i = 0; i <= untilNumberX; i++) {
+		printf("%i ", i);
+	}
+	printf("= printNumbersFor(%i)\n ", untilNumberX);
 }
 
 /*
 	typischer prozeduraler Code mit einer rekursiven Funktion
 */
-void printNumbersRecursiveFunction() {
-
+void printNumbersRecursiveFunction(int untilNumberX, int actualNumber) {
+	printf("%i ", actualNumber);
+	if (actualNumber <= untilNumberX) printNumbersRecursiveFunction(untilNumberX, (actualNumber+1));
+	else printf("= printNumbersRecursiveFunction(%i)\n ", untilNumberX);
 }
 
-int main() {
-	printNumbersGoto(7);
 
+int main() {
+	//printNumbersGoto(7);
+	//printNumbersFor(7);
+	printNumbersRecursiveFunction(7, 0);
 	return 0;
 }
 
