@@ -52,6 +52,19 @@ stack pop(stack s) {
 // prints all elements
 
 void print(stack s) {
+	if (isEmpty(s) != 1) {
+		printf("print - Stack contains: ");
+		int i;
+		for (i = 0; i <= s.index; i++) {
+			printf("%i, ", s.stackArray[i]);
+		}
+		printf("top element = %i\n", s.stackArray[s.index]);
+	}
+	else {
+		printf("print - Stack is empty\n");
+	}
+
+	/*
     if (s.index > STACK_EMPTY_INDEX) {
         printf("print - Stack contains: ");
         int i;
@@ -62,4 +75,16 @@ void print(stack s) {
     } else {
         printf("print - Stack is empty\n");
     }
+	*/
+}
+
+int isEmpty(stack s) {
+	if (s.index == STACK_EMPTY_INDEX) {
+		return 1;
+	}
+	return 0;
+}
+
+int size(stack s) {
+	return s.index + 1;
 }
