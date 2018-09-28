@@ -1,8 +1,10 @@
 package ch.hslu.edu.pcp.interfaces;
 
+import ch.hslu.edu.pcp.Element;
+
 public interface ElementInterface {
 
     int getValue();
-    ElementInterface getNext();
-    void setNext(ElementInterface next);
+    Element getNext();
+    void setNext(Element next);
 }

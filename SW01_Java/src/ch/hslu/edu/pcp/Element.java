@@ -4,22 +4,25 @@ import ch.hslu.edu.pcp.interfaces.ElementInterface;
 
 public class Element implements ElementInterface {
 
-    public Element(int value) {
+    private int value;
+    private Element next;
 
+    public Element(int value) {
+        this.value = value;
     }
 
     @Override
     public int getValue() {
-        return 0;
+        return this.value;
     }
 
     @Override
-    public ElementInterface getNext() {
-        return null;
+    public Element getNext() {
+        return this.next;
     }
 
     @Override
-    public void setNext(ElementInterface next) {
-
+    public void setNext(Element next) {
+        this.next = next;
     }
 }
