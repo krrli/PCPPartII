@@ -1,0 +1,47 @@
+% % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % %  Uebung 1a) % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % %
+
+% Mutter von Tina
+% X = mary
+mother(X, tina).
+
+% Vater von Sue
+% X = tom
+father(X, tom).
+
+% Mutter und Vater von Jim
+% X = tina
+% Y = tom
+mother(X, jim), father(Y, jim).
+
+% Wie heissen alle Kinder von Mary?
+% X = mia;
+% X = fred;
+% X = tina;
+mother(mary, X).
+
+% % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % %  Uebung 1b) % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % %
+
+% send d mia und de fred gschwösterti?
+% true.
+ sibling(mia,fred).
+ 
+  % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % %  Uebung 1c) % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % %
+
+grandmother(X,ann).  % X= mary
+grandmother(liz, X)  % X= sue; X=jim
+grandmother(X, jim)  % X= mary; X=liz
+grandmother(mary, X) % X= ann; X=sue; X=jim
+
+% % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % %  Uebung 1d) % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % %
+offspring(ann,mary). 
+% true.
+offspring(sue,X). 
+% X = tina ; X = tom ; X = mary ; X = mike ; X = liz ; X = jack ;
