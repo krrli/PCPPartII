@@ -55,6 +55,7 @@ public class Stack implements StackInterface {
 
     @Override
     public int size() {
+        // wärs besser, wenn mer wörd dörezelle nomol! so eschs en quatsch, wel inkonsistänt
         return this.size;
 
     }
