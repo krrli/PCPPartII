@@ -31,6 +31,8 @@ void printNumbersFor(int untilNumberX) {
 */
 void printNumbersRecursiveFunction(int untilNumberX) {
 	if (untilNumberX >= 0) {
+		// print backwards
+		//printf(" %i ", untilNumberX);
 		printNumbersRecursiveFunction(untilNumberX - 1);
 		printf(" %i ", untilNumberX);
 	}
@@ -51,4 +53,6 @@ int main() {
 	printf("= printNumbersRecursiveFunction(%i)\n", countTo);
 	return 0;
 }
+
 */
+

@@ -39,7 +39,13 @@ public class Stack implements StackInterface {
 
     @Override
     public void print() {
-        throw new NotImplementedException();
+        System.out.print("print - Stack ");
+        if (isEmpty()){
+            System.out.println("is empty");
+        }
+        else {
+            System.out.println("contains: " + topElement.toString() + ", top element: " + topElement.getValue());
+        }
     }
 
     @Override

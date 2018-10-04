@@ -25,4 +25,13 @@ public class Element implements ElementInterface {
     public void setNext(Element next) {
         this.next = next;
     }
+
+    @Override
+    public String toString(){
+        String s = String.valueOf(this.value);
+        if(next != null){
+            s += ", " + next.toString();
+        }
+        return s;
+    }
 }
