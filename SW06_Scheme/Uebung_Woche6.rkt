@@ -86,3 +86,15 @@
 ;(delete 'c '(a b c d))
 
 ; --------------- Aufgabe 5 ---------------
+(define (contains? item a-list)
+  (cond
+    ((empty? a-list) #f)
+    ((equal? item (first a-list)) #t)
+    (else
+     (contains? item (rest a-list))
+    )
+   )
+ )
+
+;(contains? 'c '(a b c d))
+;(contains? 'f '(a b c d))
