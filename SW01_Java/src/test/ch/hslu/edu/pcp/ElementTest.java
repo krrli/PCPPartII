@@ -1,8 +1,7 @@
 package test.ch.hslu.edu.pcp;
 
 import ch.hslu.edu.pcp.Element;
-import org.junit.Assert;
-import org.junit.Before;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -19,7 +18,7 @@ class ElementTest {
 
     @Test
     public void testGetValueOfElement(){
-        Assert.assertEquals(5, this.element.getValue());
+        Assertions.assertEquals(5, this.element.getValue());
     }
 
     @Test
@@ -27,7 +26,8 @@ class ElementTest {
         Element nextElement =  new Element(6);
         this.element.setNext(nextElement);
 
-        Assert.assertEquals(nextElement, this.element.getNext());
+        assertEquals();
+        Assertions.assertEquals(nextElement, this.element.getNext());
     }
 
 }

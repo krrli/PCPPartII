@@ -156,3 +156,18 @@
 
 
 ; --------------- Aufgabe 8 ---------------
+; Sortieren durch Einfügen
+(define (sort-a-list num-list)
+  (cond
+    ((empty? num-list) empty)
+    (else (insert (first num-list)
+                  (sort-a-list (rest num-list))))
+))
+
+; Einfügen in sortierter Liste
+(define (insert item a-list)
+  (cond
+    ((empty? a-list) (list item))
+    ((<= item (first a-list)) (cons item a-list)) ;<= muss parameter sein! für string vergelich: string<?
+    (else (cons (first a-list) (insert item (rest a-list))))
+))
