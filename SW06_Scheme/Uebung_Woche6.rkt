@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-reader.ss" "lang")((modname Uebung_Woche6) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-advanced-reader.ss" "lang")((modname Uebung_Woche6) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
 ; --------------- Aufgabe 1  ---------------
 
 (define couple (list
@@ -98,3 +98,61 @@
 
 ;(contains? 'c '(a b c d))
 ;(contains? 'f '(a b c d))
+
+; ------- Funktionen höherer Ordnung ------
+; --------------- Aufgabe 6 ---------------
+
+(define
+  (list-filter rel-op a-list value)
+  (cond
+    [(empty? a-list) empty]
+    [else
+     (cond
+       [(rel-op (first a-list) value) (cons (first a-list) (list-filter rel-op (rest a-list) value))]
+       [else (list-filter rel-op (rest a-list) value)])]
+   )
+ )
+
+(define my-list (list 3 5 14 6 4 23 6 77 31 30 2))
+; (list-filter > my-list 14)
+(define my-symbols (list 'a 'b 'c 'y 'x))
+(define my-signs (list #t #f 'a 'b))
+(define my-strings (list "a" "b" "c" "y" "x"))
+
+; --------------- Aufgabe 6a) ---------------
+; 6a) Suche ein bestimmtes Symbol in einer Liste von Symbolen
+;(list-filter eq? my-symbols (list 'c))
+;(list-filter equal? my-symbols 'u)
+
+; eqv?: identity comparison
+; eq?: value comparison (oder equal?)
+
+; --------------- Aufgabe 6b) ---------------
+; 6b) Suche ein bestimmtes Zeichen in einer Liste von Zeichen
+;(list-filter equal? my-signs #t)
+; ====> zeichen in scheme??? (a, b, c) Zeichenketten (hallo) = string
+
+; --------------- Aufgabe 6b) ---------------
+; 6c) Suche einen bestimmten String in einer Liste von Strings
+;(list-filter equal? my-strings "x")
+;(list-filter equal? my-strings "u")
+
+
+; --------------- Aufgabe 7 ---------------
+; Prädikatsfunktion soll untersuchen, ob es eine oder mehrere Zahlen in einer Liste von Zahlen gibt, die teilbar
+; durch bestimmte Zahl ist
+; Rückgabe: Liste mit Zahlen, die durch X teilbar sind
+; Prädikat als Operator in list-filter mitgeben!!!
+; division: (remainder X Y) gibt 0, wenn teilbar
+
+(define
+  (dividableByX? firstOfTheList x)
+  (= 0 (remainder firstOfTheList x))
+)
+; (list-filter dividableByX? '(1 2 3 4 5 6 7 8 9) 2)
+; gibt (list 2 4 6 8)
+; (list-filter dividableByX? my-list 5)
+; gibt (list 5 30)
+
+
+; --------------- Aufgabe 8 ---------------
