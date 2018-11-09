@@ -181,3 +181,39 @@
     (else (cons (first a-list) (insert item (rest a-list) insertOrderOp)))
 ))
 
+; --------------- Aufgabe 9a) ---------------
+(define (a-op a)
+  (cond
+    [(>= a 0) +]
+    [else -]))
+
+; Wenn Parameter a >= 0 ist, gibt die Funktion + zurück, sonst -
+; (a-op -1)
+; (a-op 0)
+; (a-op 1)
+; ((a-op 5) 2 1)
+; ((a-op -1) 2 1)
+
+; --------------- Aufgabe 9b) ---------------
+(define (abs-a-plus-b a b)
+  (+
+    (if (>= a 0) a (* a -1))
+    (if (>= b 0) b (* b -1))
+    )
+)
+
+; should be 5:
+; (abs-a-plus-b -2 -3)
+
+; --------------- Aufgabe 9c) ---------------
+(define (abs-a-op-b a b op)
+  (op
+    (if (>= a 0) a (* a -1))
+    (if (>= b 0) b (* b -1))
+    )
+)
+
+;(abs-a-op-b -5 -3 *)
+;(abs-a-op-b -5 -3 +)
+;(abs-a-op-b -5 -3 -)
+;(abs-a-op-b -5 -3 /)
