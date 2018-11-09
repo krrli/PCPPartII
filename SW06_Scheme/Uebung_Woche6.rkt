@@ -156,18 +156,28 @@
 
 
 ; --------------- Aufgabe 8 ---------------
+(define numbers '(1 3 6 5 2 4))
+(define strings '("a" "c" "d" "b" "z" "x"))
+
+; (sort-a-list numbers <=) ; ascending
+; (sort-a-list numbers >=) ; descending
+; (sort-a-list strings string<?) ; ascending
+; (sort-a-list strings string>?) ; descending
+
+
 ; Sortieren durch Einfügen
-(define (sort-a-list num-list)
+(define (sort-a-list num-list insertOrderOp) ;insertOrderOp: Operator für Vergleich in insert!
   (cond
     ((empty? num-list) empty)
     (else (insert (first num-list)
-                  (sort-a-list (rest num-list))))
+                  (sort-a-list (rest num-list) insertOrderOp) insertOrderOp))
 ))
 
 ; Einfügen in sortierter Liste
-(define (insert item a-list)
+(define (insert item a-list insertOrderOp)
   (cond
     ((empty? a-list) (list item))
-    ((<= item (first a-list)) (cons item a-list)) ;<= muss parameter sein! für string vergelich: string<?
-    (else (cons (first a-list) (insert item (rest a-list))))
+    ((insertOrderOp item (first a-list)) (cons item a-list)) ;<= muss parameter sein! für string vergelich: string<?
+    (else (cons (first a-list) (insert item (rest a-list) insertOrderOp)))
 ))
+
