@@ -50,7 +50,7 @@
       )
   )
 )
-; ==> bewirkt, dass immer das letzte Element der Liste zurückgegeben wird
+; ==> bewirkt, dass immer das letzte Element der Liste zurückgegeben wird 
 
 ; --------------- Aufgabe 3 b) ---------------
 (define (g liste)
@@ -214,6 +214,6 @@
 )
 
 ;(abs-a-op-b -5 -3 *)
-;(abs-a-op-b -5 -3 +)
+;(abs-a-op-b -5 3 +)
 ;(abs-a-op-b -5 -3 -)
 ;(abs-a-op-b -5 -3 /)

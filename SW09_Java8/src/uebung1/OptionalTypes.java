@@ -27,7 +27,7 @@ public class OptionalTypes {
                 .filter(s -> s.startsWith("T"))
                 .map(s -> s.toUpperCase())
                 .reduce((s, t) -> s + " " + t);
-        System.out.println(x);
+        System.out.println(x.get());
     }
 
     // 1b)
@@ -45,6 +45,7 @@ public class OptionalTypes {
 
     // 1c)
     public void printOptional(Optional<String> optionalString, String defaultValue){
+
 
         System.out.println("value = " + optionalString.orElse(defaultValue));
     }
