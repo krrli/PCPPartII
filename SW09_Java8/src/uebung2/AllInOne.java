@@ -25,8 +25,4 @@ public class AllInOne {
         integerList.forEach(i -> stringJoiner.add(String.valueOf(i)));
         System.out.println(stringJoiner);
     }
-
-    /**
-     *
-     */
 }
