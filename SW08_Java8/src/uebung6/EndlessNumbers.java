@@ -33,5 +33,6 @@ public class EndlessNumbers {
  *
  * 6b)
  * Andere Lösung?
+ * Counter KLasse wäre auch möglich
  *
  */

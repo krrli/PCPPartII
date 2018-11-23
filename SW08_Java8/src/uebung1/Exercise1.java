@@ -17,7 +17,7 @@ public class Exercise1 implements GeneralInterface, SpecificInterface {
  * Bei Subinterfaces wird immer (automatisch) die spezifischere Implementierung verwendet.
  *
  * 1. c)
- * Entfernt man ' extends GeneralInterface ' im SpecificInterface gibt es einen Fehler.
+ * Entfernt man ' extends GeneralInterface' im SpecificInterface gibt es einen Fehler.
  * Excercise1 müsste die Methode doIt überschreiben:
  * GeneralInterface.super.doIt(); bzw. SpecificInterface.super.doIt();
  *
