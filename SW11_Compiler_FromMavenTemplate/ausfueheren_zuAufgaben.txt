@@ -1,0 +1,44 @@
+AdamRiese:
+cd C:\Code\PCPPartII\SW11_Compiler_FromMavenTemplate
+java -jar AdamRiese.jar "(1+2)*3="(stmt (expr (term (factor ( (expr (term (factor (number 1))) (addop +) (expr (term (factor (number 2))))) )) (mulop *) (term (factor (number 3))))) =)
+
+
+%%%%%%%%%%%%%%%%%%%% Aufgabe 4a) %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% Postman.g4 -> satz
+% gut:
+der hund beisst den briefträger
+der briefträger beisst den hund
+den briefträger beisst der hund
+
+% schlecht:
+der Hund beisst den Briefträger
+der hund beisst die katze
+
+%%%%%%%%%%%%%%%%%%%% Aufgabe 5) %%%%%%%%%%%%%%%%%%%%
+%  PostmanV2.g4 -> satz
+% gut:
+der hund beisst den briefträger
+der briefträger beisst den hund
+den briefträger beisst der hund
+der hund beisst die katze
+
+% schlecht (unbekannt: Hund):
+% mit 'Hund' im substantiv würds gehen.
+% dann wäre noch Briefträger unbekannt.
+der Hund beisst den Briefträger
+
+
+%%%%%%%%%%%%%%%%%%%% Aufgabe 6) %%%%%%%%%%%%%%%%%%%%
+% original
+1+2+3-4=
+(1+2)*(4-5)=
+7*8+((5-2)/0)=
+1+(2+(3+(4*5))))=
+-1*2+(3/(4+5))=
+
+% korrigiert (#36 1 Klammer zu viel, minus vor Zahl / negative Zahlen erlaubt)
+1+2+3-4=
+(1+2)*(4-5)=
+7*8+((5-2)/0)=
+1+(2+(3+(4*5))))=
+-1*2+(3/(4+5))=

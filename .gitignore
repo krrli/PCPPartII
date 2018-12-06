@@ -331,3 +331,7 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+
+SW11_Compiler/antlr4\.bat
+
+SW11_Compiler/trig\.bat
