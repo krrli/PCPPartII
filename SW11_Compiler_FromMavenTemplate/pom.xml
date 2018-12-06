@@ -65,7 +65,12 @@
         <argLine>-Xms512m -Xmx1g -Xss10m</argLine>
 
         <!-- Hier ggf. andere Startklasse anpassen! -->
-        <jar.start.class>ch.hslu.pcp.compiler.AdamRiese.DemoAdamRiese</jar.start.class>
+        <!-- Adam Riese -->
+        <jar.start.class>ch.hslu.pcp.compiler.a0AdamRiese.DemoAdamRiese</jar.start.class>
+        <!-- Adam Riese V2-->
+        <!--
+        <jar.start.class>ch.hslu.pcp.compiler.a6AdamRieseV2V2.DemoAdamRieseV2</jar.start.class>
+        -->
 
         <group.id>oop</group.id>
         <developer.id>zbgisler</developer.id>
