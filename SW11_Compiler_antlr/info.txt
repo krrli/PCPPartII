@@ -1,0 +1,2 @@
+these folders should be placed at C:\antlr
+see https://github.com/antlr/antlr4/blob/master/doc/getting-started.md

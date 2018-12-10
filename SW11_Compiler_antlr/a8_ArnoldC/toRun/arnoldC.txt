@@ -1,0 +1,9 @@
+IT'S SHOWTIME
+TALK TO THE HAND "hello world"
+BLA 'Hello' BLA
+BLA 'Hello 5000' BLA
+BLA 'Hello :-)' BLA
+BLA 'Hello'  'lülülü' 'tüdlü'
+BLA
+TALK TO THE HAND "is there any comment?"
+YOU HAVE BEEN TERMINATED
