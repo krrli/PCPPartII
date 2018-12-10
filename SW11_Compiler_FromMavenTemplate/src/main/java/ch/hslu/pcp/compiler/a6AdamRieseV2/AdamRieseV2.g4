@@ -1,4 +1,4 @@
-// Definition der Grammatik AdamRiese
+// Definition der Grammatik a0AdamRiese
 grammar AdamRieseV2;
 
 // Parser-Regeln

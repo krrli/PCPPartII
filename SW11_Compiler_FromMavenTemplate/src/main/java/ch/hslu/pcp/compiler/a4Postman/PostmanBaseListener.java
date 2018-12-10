@@ -1,5 +1,5 @@
-// Generated from C:/Code/PCPPartII/SW11_Compiler_FromMavenTemplate/src/main/java/ch/hslu/pcp/compiler/Postman\Postman.g4 by ANTLR 4.7
-package ch.hslu.pcp.compiler.Postman;
+// Generated from C:/Code/PCPPartII/SW11_Compiler_FromMavenTemplate/src/main/java/ch/hslu/pcp/compiler/a4Postman\a4Postman.g4 by ANTLR 4.7
+package ch.hslu.pcp.compiler.a4Postman;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;

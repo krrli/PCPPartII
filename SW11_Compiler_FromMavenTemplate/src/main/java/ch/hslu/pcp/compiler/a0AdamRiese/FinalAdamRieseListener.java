@@ -1,5 +1,5 @@
-// Generated from C:/Code/PCPPartII/SW11_Compiler_FromMavenTemplate/src/main/compiler/AdamRiese\FinalAdamRiese.g4 by ANTLR 4.7
-package ch.hslu.pcp.compiler.AdamRiese;
+// Generated from C:/Code/PCPPartII/SW11_Compiler_FromMavenTemplate/src/main/compiler/a0AdamRiese\FinalAdamRiese.g4 by ANTLR 4.7
+package ch.hslu.pcp.compiler.a0AdamRiese;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**

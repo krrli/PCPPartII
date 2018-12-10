@@ -1,7 +1,7 @@
-package ch.hslu.pcp.compiler.AdamRieseV2;
+package ch.hslu.pcp.compiler.a6AdamRieseV2;
 
-import ch.hslu.pcp.compiler.AdamRiese.FinalAdamRieseLexer;
-import ch.hslu.pcp.compiler.AdamRiese.FinalAdamRieseParser;
+import ch.hslu.pcp.compiler.a0AdamRiese.FinalAdamRieseLexer;
+import ch.hslu.pcp.compiler.a0AdamRiese.FinalAdamRieseParser;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;

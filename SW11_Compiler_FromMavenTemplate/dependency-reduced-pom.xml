@@ -484,7 +484,7 @@
     <sourcePlugin.version>3.0.1</sourcePlugin.version>
     <surefireReportPlugin.version>${surefirePlugin.version}</surefireReportPlugin.version>
     <findbugsPlugin.version>3.0.5</findbugsPlugin.version>
-    <jar.start.class>ch.hslu.pcp.compiler.AdamRiese.DemoAdamRiese</jar.start.class>
+    <jar.start.class>ch.hslu.pcp.compiler.a0AdamRiese.DemoAdamRiese</jar.start.class>
     <pmd.config.location>${project.basedir}/config/pmd/pmd_hslu.xml</pmd.config.location>
     <checkstyle.config.location>${project.basedir}/config/checkstyle/checkstyle.xml</checkstyle.config.location>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

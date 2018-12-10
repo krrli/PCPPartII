@@ -1,11 +1,11 @@
-package ch.hslu.pcp.compiler.Postman;/*
+package ch.hslu.pcp.compiler.a4Postman;/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-import ch.hslu.pcp.compiler.AdamRiese.FinalAdamRieseBaseVisitor;
-import ch.hslu.pcp.compiler.AdamRiese.FinalAdamRieseParser;
+import ch.hslu.pcp.compiler.a0AdamRiese.FinalAdamRieseBaseVisitor;
+import ch.hslu.pcp.compiler.a0AdamRiese.FinalAdamRieseParser;
 
 public class EvalVisitorPostman extends FinalAdamRieseBaseVisitor<Integer> {
 

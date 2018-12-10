@@ -1,13 +1,10 @@
-// Generated from C:/Code/PCPPartII/SW11_Compiler_FromMavenTemplate/src/main/java/ch/hslu/pcp/compiler/AdamRieseV2\AdamRieseV2.g4 by ANTLR 4.7
-package ch.hslu.pcp.compiler.AdamRieseV2;
+// Generated from C:/Code/PCPPartII/SW11_Compiler_FromMavenTemplate/src/main/java/ch/hslu/pcp/compiler/a6AdamRieseV2\a6AdamRieseV2.g4 by ANTLR 4.7
+package ch.hslu.pcp.compiler.a6AdamRieseV2;
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
-import org.antlr.v4.runtime.Token;
-import org.antlr.v4.runtime.TokenStream;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
-import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class AdamRieseV2Lexer extends Lexer {
@@ -76,7 +73,7 @@ public class AdamRieseV2Lexer extends Lexer {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "AdamRieseV2.g4"; }
+	public String getGrammarFileName() { return "a6AdamRieseV2.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }

@@ -1,5 +1,5 @@
-// Generated from C:/Code/PCPPartII/SW11_Compiler_FromMavenTemplate/src/main/java/ch/hslu/pcp/compiler/AdamRieseV2\AdamRieseV2.g4 by ANTLR 4.7
-package ch.hslu.pcp.compiler.AdamRieseV2;
+// Generated from C:/Code/PCPPartII/SW11_Compiler_FromMavenTemplate/src/main/java/ch/hslu/pcp/compiler/a6AdamRieseV2\a6AdamRieseV2.g4 by ANTLR 4.7
+package ch.hslu.pcp.compiler.a6AdamRieseV2;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;

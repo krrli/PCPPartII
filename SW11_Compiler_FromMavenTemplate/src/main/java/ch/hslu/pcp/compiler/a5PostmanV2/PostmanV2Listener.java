@@ -1,5 +1,5 @@
-// Generated from C:/Code/PCPPartII/SW11_Compiler_FromMavenTemplate/src/main/java/ch/hslu/pcp/compiler/PostmanV2\PostmanV2.g4 by ANTLR 4.7
-package ch.hslu.pcp.compiler.PostmanV2;
+// Generated from C:/Code/PCPPartII/SW11_Compiler_FromMavenTemplate/src/main/java/ch/hslu/pcp/compiler/a5PostmanV2\a5PostmanV2.g4 by ANTLR 4.7
+package ch.hslu.pcp.compiler.a5PostmanV2;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**

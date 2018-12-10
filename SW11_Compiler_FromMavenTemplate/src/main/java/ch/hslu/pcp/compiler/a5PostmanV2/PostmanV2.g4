@@ -1,4 +1,4 @@
-// Definition einer Grammatik mit dem Namen Postman
+// Definition einer Grammatik mit dem Namen a4Postman
 grammar PostmanV2;
 
 // Parser-Regeln

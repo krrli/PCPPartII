@@ -1,5 +1,5 @@
-// Generated from C:/Code/PCPPartII/SW11_Compiler_FromMavenTemplate/src/main/java/ch/hslu/pcp/compiler/Postman\Postman.g4 by ANTLR 4.7
-package ch.hslu.pcp.compiler.Postman;
+// Generated from C:/Code/PCPPartII/SW11_Compiler_FromMavenTemplate/src/main/java/ch/hslu/pcp/compiler/a4Postman\a4Postman.g4 by ANTLR 4.7
+package ch.hslu.pcp.compiler.a4Postman;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -61,7 +61,7 @@ public class PostmanParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "Postman.g4"; }
+	public String getGrammarFileName() { return "a4Postman.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }

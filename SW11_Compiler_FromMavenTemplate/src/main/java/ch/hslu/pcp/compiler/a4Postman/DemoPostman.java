@@ -1,4 +1,4 @@
-package ch.hslu.pcp.compiler.Postman;
+package ch.hslu.pcp.compiler.a4Postman;
 
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
