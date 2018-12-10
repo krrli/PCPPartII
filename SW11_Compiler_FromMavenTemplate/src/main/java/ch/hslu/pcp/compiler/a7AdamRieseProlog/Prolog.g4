@@ -3,7 +3,8 @@ grammar Prolog;
 // (1 + 2) * 3 = X
 // X is (1+2)*3.
 
-stmt   : expr assign ID;
+stmt   : expr assign ID
+        | COMMENT;
 
 assign : '=' ;
 
@@ -30,3 +31,10 @@ DIV    : '/' ;
 ID     : [A-Z]+ ;
 DIGIT  : [0-9]+ ;
 WS     : [ \t\r\n]+ -> skip ;
+
+COMMENT
+    : 'BLA' .*? 'BLA' -> channel(COMMENTS)
+    ;
+
+
+

@@ -75,3 +75,17 @@ javac AdamRiese*.java
 grun AdamRieseV2 stmt -tree ./calc/calc.txt
 grun AdamRieseV2 stmt -gui ./calc/calc_correct.txt
 
+%%%%%%%%%%%%%%%%%%%% Aufgabe 7) %%%%%%%%%%%%%%%%%%%%
+Main Klasse "PrologTranslator" ausführen und Program Arguments mitgeben:
+
+"(1+2)*3=X"
+"(42+(25-3*4))/11=N"
+"(24+32)/7+3*(17-15)=GA"
+"34428/38-(1103-197)=UPS"
+
+%%%%%%%%%%%%%%%%%%%% Aufgabe 8) %%%%%%%%%%%%%%%%%%%%
+cd C:\antlr\a8_ArnoldC
+grun ArnoldC program -gui toRun/arnoldC.txt
+
+
+

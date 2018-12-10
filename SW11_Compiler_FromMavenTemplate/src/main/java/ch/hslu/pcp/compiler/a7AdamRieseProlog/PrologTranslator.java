@@ -1,6 +1,5 @@
 package ch.hslu.pcp.compiler.a7AdamRieseProlog;
 
-import ch.hslu.pcp.compiler.a0AdamRiese.EvalVisitor;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
