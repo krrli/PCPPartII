@@ -14,5 +14,12 @@ public class DemoPostman {
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         PostmanParser parser = new PostmanParser(tokens);
         ParseTree tree = parser.satz();
+
+        System.out.println();
+        System.out.println(tree);
+
+        //Integer res = eval.visit(tree);
+        //System.out.println(args[0]+res);
+
     }
 }

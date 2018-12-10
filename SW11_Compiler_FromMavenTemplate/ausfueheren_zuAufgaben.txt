@@ -14,6 +14,24 @@ den briefträger beisst der hund
 der Hund beisst den Briefträger
 der hund beisst die katze
 
+
+%%%%%%%%%%%%%%%%%%%% ausführen: ANTLR (testrig = grun) 
+% see: https://github.com/antlr/antlr4/blob/master/doc/getting-started.md
+cd c:\antlr\a4_postman
+% generate files
+antlr4 Postman.g4 	
+
+% compiles	
+javac Postman*.java
+
+% Text
+% The -tree option prints the parse tree in LISP notation.
+grun Postman satz -tree saetze\1.txt
+
+% Graphics
+grun Postman satz -gui saetze\3.txt
+
+
 %%%%%%%%%%%%%%%%%%%% Aufgabe 5) %%%%%%%%%%%%%%%%%%%%
 %  PostmanV2.g4 -> satz
 % gut:
@@ -26,6 +44,13 @@ der hund beisst die katze
 % mit 'Hund' im substantiv würds gehen.
 % dann wäre noch Briefträger unbekannt.
 der Hund beisst den Briefträger
+
+%%%%%%%%%%%%%%%%%%%% ausführen: ANTLR (testrig = grun)
+cd c:\antlr\a5_postman
+antlr4 PostmanV2.g4
+javac Postman*.java
+grun PostmanV2 satz -tree c:\antlr\a4_postman\saetze\1.txt
+grun PostmanV2 satz -gui c:\antlr\a4_postman\saetze\1.txt
 
 
 %%%%%%%%%%%%%%%%%%%% Aufgabe 6) %%%%%%%%%%%%%%%%%%%%
@@ -42,3 +67,11 @@ der Hund beisst den Briefträger
 7*8+((5-2)/0)=
 1+(2+(3+(4*5))))=
 -1*2+(3/(4+5))=
+
+%%%%%%%%%%%%%%%%%%%% ausführen: ANTLR (testrig = grun)
+cd c:\antlr\a6_adamRiese
+antlr4 AdamRieseV2.g4
+javac AdamRiese*.java
+grun AdamRieseV2 stmt -tree ./calc/calc.txt
+grun AdamRieseV2 stmt -gui ./calc/calc_correct.txt
+

@@ -4,9 +4,11 @@ grammar Postman;
 // Parser-Regeln
 satz        : subjekt praedikat objekt ;
 
-subjekt     : artikel substantiv ;
+subjekt     : artikel substantiv #SubjectArtSubst
+            ;
 
-objekt      : artikel substantiv ;
+objekt      : artikel substantiv #ObjectArtSubst
+            ;
 
 praedikat    : verb ;
 substantiv  : 'hund' | 'briefträger';
